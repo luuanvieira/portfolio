@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luan Vieira, desenvolvedor full stack</title>
+  <meta name="description" content="Portfólio de Luan Vieira, desenvolvedor full stack em Canoas/RS. Projetos em Angular, React, Node.js e MongoDB.">
+  <meta property="og:title" content="Luan Vieira, desenvolvedor full stack">
+  <meta property="og:description" content="Seis anos operando processos industriais. Hoje eu construo os sistemas.">
+  <meta property="og:image" content="img/agencia.webp">
+  <meta name="theme-color" content="#15181d">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#projetos">Pular para os projetos</a>
+
+  <header class="topo">
+    <div class="caixa topo__barra">
+      <a href="#" class="marca" aria-label="Luan Vieira, início">
+        <span class="marca__sigla"><svg viewBox="0 0 32 32" width="38" height="38" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#15181d"/><g fill="none" stroke="#ffc400" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v18h12.8L24 6.5"/><path d="M13.6 6.5l5.7 18"/></g><circle cx="26.2" cy="24.5" r="2.1" fill="#12a86b"/></svg></span>
+        <span>Luan Vieira</span>
+      </a>
+      <nav aria-label="Seções">
+        <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#contato" class="botao botao--pequeno">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABERTURA -->
+    <section class="abertura">
+      <div class="caixa">
+        <p class="status"><span class="luz" aria-hidden="true"></span> Disponível para estágio e vaga júnior</p>
+        <h1>Do painel da fábrica ao código.</h1>
+        <p class="abertura__texto">
+          Sou Luan Vieira, desenvolvedor full stack em Canoas/RS. Passei seis anos operando
+          processos na DuPont e na IFF, de olho em telas de IHM, SAP e planilhas. Hoje estudo
+          Ciência da Computação na La Salle e construo sistemas web, com foco em dados,
+          bancos de dados e IA.
+        </p>
+        <div class="acoes">
+          <a href="#projetos" class="botao">Ver projetos</a>
+          <a href="mailto:luuan.vieira@hotmail.com" class="botao botao--contorno">Enviar e-mail</a>
+        </div>
+      </div>
+
+      <!-- Linha de processo: a trajetória em ordem -->
+      <div class="caixa" id="trajetoria">
+        <ol class="processo" aria-label="Trajetória">
+          <li class="etapa" style="--i: 0">
+            <span class="etapa__no" aria-hidden="true"></span>
+            <span class="etapa__ano">2015 a 2017</span>
+            <strong>Técnico em Química</strong>
+            <span class="etapa__onde">Colégio Ulbra</span>
+          </li>
+          <li class="etapa" style="--i: 1">
+            <span class="etapa__no" aria-hidden="true"></span>
+            <span class="etapa__ano">2019 a 2025</span>
+            <strong>Operador de Processos II</strong>
+            <span class="etapa__onde">DuPont e IFF, planta de soja em Esteio</span>
+          </li>
+          <li class="etapa" style="--i: 2">
+            <span class="etapa__no" aria-hidden="true"></span>
+            <span class="etapa__ano">2022 a 2027</span>
+            <strong>Ciência da Computação</strong>
+            <span class="etapa__onde">Universidade La Salle, 7º semestre</span>
+          </li>
+          <li class="etapa etapa--agora" style="--i: 3">
+            <span class="etapa__no" aria-hidden="true"></span>
+            <span class="etapa__ano">Agora</span>
+            <strong>Desenvolvedor full stack</strong>
+            <span class="etapa__onde">Angular, React, Node.js e MongoDB</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projetos" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="caixa">
+        <h2 id="titulo-projetos" class="titulo-secao">Projetos</h2>
+
+        <!--
+          Links: preencha o href de "Ver online" e "Código" de cada projeto.
+          Botões com href vazio ficam escondidos automaticamente.
+        -->
+
+        <article class="projeto">
+          <figure class="tela">
+            <img src="img/agencia.webp" alt="Painel da Agência: total de diamantes da semana, pódio dos três melhores hosts e gráficos" width="1280" height="800" loading="lazy">
+          </figure>
+          <div class="projeto__texto">
+            <p class="projeto__tipo">Ferramenta interna, demonstração com dados fictícios</p>
+            <h3>Painel da Agência</h3>
+            <p>
+              A agência de streamers onde eu trabalho controlava os pagamentos semanais em PDF e
+              planilha. Criei um painel que lê esse relatório e mostra ranking, evolução semana a
+              semana e quem precisa de atenção.
+            </p>
+            <ul class="feitos">
+              <li>Leitura do PDF no servidor e gravação no MongoDB Atlas</li>
+              <li>Ranking, variação semanal e alertas automáticos (sem live, salário perdido, queda forte)</li>
+              <li>Página de cada host com histórico, anotações e atalho para o WhatsApp</li>
+            </ul>
+            <ul class="stack" aria-label="Ferramentas">
+              <li>React</li><li>Vite</li><li>Recharts</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Mongoose</li><li>pdf.js</li>
+            </ul>
+            <div class="links">
+              <a class="botao" href="" target="_blank" rel="noopener">Ver online</a>
+              <a class="botao botao--contorno" href="https://github.com/luuanvieira/agencia-web" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <figure class="tela">
+            <img src="img/cifrei.webp" alt="Cifrei: página inicial azul com braço de violão e lista de cifras agrupada por letra" width="1280" height="800" loading="lazy">
+          </figure>
+          <div class="projeto__texto">
+            <p class="projeto__tipo">Projeto pessoal</p>
+            <h3>Cifrei</h3>
+            <p>
+              Site de cifras para tocar violão: muda o tom com um clique, rola a música sozinho e
+              deixa cadastrar as próprias cifras, convertendo do formato com acordes em cima da letra.
+            </p>
+            <ul class="feitos">
+              <li>Parser de cifras e transposição de tom escritos em TypeScript puro</li>
+              <li>Estado com Signals e favoritos salvos no navegador</li>
+              <li>Editor com formulário reativo e pré-visualização ao vivo</li>
+            </ul>
+            <ul class="stack" aria-label="Ferramentas">
+              <li>Angular 20</li><li>TypeScript</li><li>Signals</li><li>Reactive Forms</li><li>CSS</li>
+            </ul>
+            <div class="links">
+              <a class="botao" href="" target="_blank" rel="noopener">Ver online</a>
+              <a class="botao botao--contorno" href="https://github.com/luuanvieira/cifras" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <figure class="tela">
+            <img src="img/umpe.webp" alt="Um Pé Sneaker Store: página inicial com tênis azul em destaque" width="1280" height="800" loading="lazy">
+          </figure>
+          <div class="projeto__texto">
+            <p class="projeto__tipo">Começou na faculdade, reescrito em Angular</p>
+            <h3>Um Pé Sneaker Store</h3>
+            <p>
+              Loja de tênis feita para a disciplina de Desenvolvimento Web em HTML, CSS e JavaScript.
+              Depois reescrevi tudo em Angular, com carrinho, favoritos e cadastro.
+            </p>
+            <ul class="feitos">
+              <li>Carrinho e favoritos com Signals, salvos no navegador</li>
+              <li>Filtro por categoria refletido na URL e busca que ignora acentos</li>
+              <li>Cadastro com validação e máscaras de CPF e telefone</li>
+            </ul>
+            <ul class="stack" aria-label="Ferramentas">
+              <li>Angular 19</li><li>TypeScript</li><li>Signals</li><li>Reactive Forms</li><li>CSS</li>
+            </ul>
+            <div class="links">
+              <a class="botao" href="" target="_blank" rel="noopener">Ver online</a>
+              <a class="botao botao--contorno" href="https://github.com/luuanvieira/um-pe-store" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto">
+          <figure class="tela">
+            <img src="img/passione.webp" alt="Passione Tattoo Studio: página inicial escura com a caveira rosa do estúdio" width="1280" height="760" loading="lazy">
+          </figure>
+          <div class="projeto__texto">
+            <p class="projeto__tipo">Projeto em equipe da disciplina de Integração Web</p>
+            <h3>Passione Tattoo Studio</h3>
+            <p>
+              Site de um estúdio de tatuagem com agendamento por chat. Um agente automatizado
+              conversa com o cliente e o estúdio acompanha os pedidos num painel interno.
+            </p>
+            <ul class="feitos">
+              <li>Chat de agendamento integrado a uma API em Python</li>
+              <li>Área do estúdio com login e status de cada atendimento</li>
+              <li>Visual refeito mantendo a identidade da marca</li>
+            </ul>
+            <ul class="stack" aria-label="Ferramentas">
+              <li>Angular 19</li><li>Tailwind CSS</li><li>TypeScript</li><li>Python</li><li>API REST</li>
+            </ul>
+            <div class="links">
+              <a class="botao" href="" target="_blank" rel="noopener">Ver online</a>
+              <a class="botao botao--contorno" href="https://github.com/luuanvieira/passione-tattoo" target="_blank" rel="noopener">Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FERRAMENTAS -->
+    <section class="ferramentas" aria-labelledby="titulo-ferramentas">
+      <div class="caixa">
+        <h2 id="titulo-ferramentas" class="titulo-secao">Com o que eu trabalho</h2>
+        <div class="grupos">
+          <div>
+            <h3>Front-end</h3>
+            <p>Angular, React, TypeScript, JavaScript, HTML, CSS e Tailwind</p>
+          </div>
+          <div>
+            <h3>Back-end</h3>
+            <p>Go, Node.js, Express, Python e APIs REST</p>
+          </div>
+          <div>
+            <h3>Dados</h3>
+            <p>MySQL, NoSQL (MongoDB e Mongoose), Power BI, Databricks e Excel</p>
+          </div>
+          <div>
+            <h3>Dia a dia</h3>
+            <p>Git, GitHub, Vite, Postman e SAP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="caixa contato__grade">
+        <div class="contato__chamada">
+          <h2 id="titulo-contato">Vamos conversar?</h2>
+          <p>
+            Procuro estágio ou vaga júnior em desenvolvimento ou dados. Se você tem uma vaga,
+            um projeto ou quer saber mais de algum trabalho daqui, me chama. Respondo rápido.
+          </p>
+          <p class="contato__status"><span class="luz" aria-hidden="true"></span> Disponível para começar</p>
+        </div>
+
+        <ul class="canais" aria-label="Formas de contato">
+          <li class="canal">
+            <a class="canal__link" href="mailto:luuan.vieira@hotmail.com">
+              <span class="canal__lampada" aria-hidden="true"></span>
+              <span class="canal__nome">E-mail</span>
+              <span class="canal__valor canal__valor--email">luuan.vieira<wbr>@hotmail.com</span>
+            </a>
+            <button class="canal__copiar" type="button" data-copiar="luuan.vieira@hotmail.com">Copiar</button>
+          </li>
+          <li class="canal">
+            <a class="canal__link" href="https://www.linkedin.com/in/luuanvieira" target="_blank" rel="noopener">
+              <span class="canal__lampada" aria-hidden="true"></span>
+              <span class="canal__nome">LinkedIn</span>
+              <span class="canal__valor">in/luuanvieira</span>
+            </a>
+          </li>
+          <li class="canal">
+            <a class="canal__link" href="https://github.com/luuanvieira" target="_blank" rel="noopener">
+              <span class="canal__lampada" aria-hidden="true"></span>
+              <span class="canal__nome">GitHub</span>
+              <span class="canal__valor">luuanvieira</span>
+            </a>
+          </li>
+        </ul>
+        <p class="sr-only" aria-live="polite" id="aviso-copia"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="caixa">
+      <span>Luan Vieira, Canoas/RS</span>
+      <span>Site feito à mão em HTML, CSS e um pouco de JavaScript</span>
+    </div>
+  </footer>
+
+  <script>
+    // Botão "Copiar" do e-mail
+    document.querySelectorAll('[data-copiar]').forEach((botao) => {
+      botao.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(botao.dataset.copiar);
+          botao.textContent = 'Copiado';
+          botao.dataset.ok = '';
+          document.getElementById('aviso-copia').textContent = 'E-mail copiado.';
+          setTimeout(() => { botao.textContent = 'Copiar'; delete botao.dataset.ok; }, 2000);
+        } catch {
+          window.location.href = 'mailto:' + botao.dataset.copiar;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
